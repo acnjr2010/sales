@@ -118,6 +118,32 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Product do
+    create do
+      field  :name
+      field  :description
+      field  :status
+      field  :price
+      field  :photo
+    end
+
+    edit do
+      field  :name
+      field  :description
+      field  :status
+      field  :price
+      field  :photo
+    end
+
+    list do
+      field  :name
+      field  :description
+      field  :status
+      field  :price
+      field  :photo
+    end
+  end
+
   config.model ProductQuantity do
     visible false
   end
