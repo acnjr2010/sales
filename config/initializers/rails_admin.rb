@@ -50,6 +50,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Sale do
+    navigation_icon 'fa fa-money'
     create do
       field  :client
       field  :sale_date
@@ -80,6 +81,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Client do
+    navigation_icon 'fa fa-users'
     create do
       field  :name
       field  :company_name
@@ -129,6 +131,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Product do
+    navigation_icon 'fa fa-product-hunt'
     create do
       field  :name
       field  :description
@@ -152,6 +155,18 @@ RailsAdmin.config do |config|
       field  :price
       field  :photo
     end
+  end
+
+  config.model Comission do
+    navigation_icon 'fa fa-dollar'
+  end
+
+  config.model Discount do
+    navigation_icon 'fa fa-minus-circle'
+  end
+
+  config.model User do
+    navigation_icon 'fa fa-user'
   end
 
   config.model ProductQuantity do
