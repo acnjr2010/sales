@@ -9,10 +9,70 @@ pt-BR:
       client:
         one: Cliente
         other: Clientes
+      comission:
+        one: Comissão
+        other: Comissões
+      discount:
+        one: Desconto
+        other: Descontos
+      product:
+        one: Produto
+        other: Produtos
+      sale:
+        one: Venda
+        other: Vendas
+      user:
+        one: Usuário
+        other: Usuários
     attributes:
       client:
-        name: "Nome"
-        company_name: "Nome da Empresa"
+        name: Nome
+        company_name: Nome da Empresa
+        document: Documento
+        phone: Telefone
+        notes: Observação
+        address: Endereços
+      comission:
+        sale: Venda
+        value: Valor
+        user: Usuário
+        note: Observação
+      discount:
+        name: Nome
+        description: Descrição
+        value: Valor
+        kind: Tipo
+        sales: Vendas
+      product:
+        name: Nome
+        description: Descrição
+        price: Preço
+        photo: Imagem
+      sale:
+        client: Cliente
+        sale_date: Data da Compra
+        discount: Desconto
+        notes: Observações
+        product_quantities: Quantidade de Produtos
+      user:
+        name: Nome
+        document: Documento
+        kind: Tipo
+        notes: Observações
+        password: Senha
+        password_confirmation: Confirmação de Senha
+        reset_password_sent_at: Último Reset de Senha
+        remember_created_at: Relembrar Criado em
+        sign_in_count: Contador de Acessos
+        current_sign_in_at: Acesso Atual
+        last_sign_in_at: Último Acesso
+        current_sign_in_ip: Atual IP
+        last_sign_in_ip: Último IP
+        comissions: Comissões
+        addresses: Endereços
+        clients: Clientes
+        product_quantities: Quantidade de Produtos
+        sales: Vendas
   views:
   admin:
     home:
