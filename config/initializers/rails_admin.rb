@@ -1,4 +1,14 @@
 RailsAdmin.config do |config|
+  # Nome do Rails Admin
+  config.main_app_name = ["Representantes Comerciais", ""]
+
+  # Links Adicionais
+  config.navigation_static_links = {
+    'Google' => 'http://www.google.com'
+  }
+
+  #Label dos Links Adicionais
+  config.navigation_static_label = "Lins Úteis"
 
   ### Popular gems integration
 
