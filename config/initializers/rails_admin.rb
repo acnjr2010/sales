@@ -10,6 +10,34 @@ RailsAdmin.config do |config|
   #Label dos Links Adicionais
   config.navigation_static_label = "Lins Úteis"
 
+  # Organização do Menu
+  config.model Discount do
+    parent Product
+  end
+
+  config.model Sale do
+    parent User
+    # posição 2 acima
+    weight -2
+  end
+
+  config.model Comission do
+    parent User
+    weight -1
+  end
+
+  config.model Client do
+    parent User
+  end
+
+  config.model ProductQuantity do
+    visible false
+  end
+
+  config.model Address do
+    visible false
+  end
+
   ### Popular gems integration
 
   ## == Devise ==
