@@ -1,4 +1,8 @@
 RailsAdmin.config do |config|
+  # Require para o Pdf
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
+
   # Nome do Rails Admin
   config.main_app_name = ["Representantes Comerciais", ""]
 
@@ -71,6 +75,9 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    pdf do
+     only User
+    end
 
     ## With an audit adapter, you can add:
     # history_index
